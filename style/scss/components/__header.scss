@@ -1,0 +1,36 @@
+@import '../variables/colors';
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    width: 100%;
+
+    &__title{
+        color: white;
+        margin-right: 50%;
+    }
+
+}
+
+.nav{
+    width: 30%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    
+    &__button{
+        padding: 15px 3% 0 3%;
+        color: $textLight;
+        font-size: 16px;
+        background-color: transparent;
+        outline: none; 
+        border: none;
+        font-weight: 400;
+    }
+}
+
+.btn_active{
+    border-top: 2px solid $second;
+    padding: 13px 3% 0 3%;
+}

@@ -1,12 +1,26 @@
+@import 'components/_header', 'variables/colors', 'variables/fonts';
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    font-family: 'Ubuntu';
+}
+
+body{
+    background-color: $background;
 }
 
 .container{
     width: 100%;
     min-height: 100vh;
-    
+    backdrop-filter: blur(10px);
+}
+
+//main page 
+
+.first_page{
+    width: 100%;
+    min-height: 80%;
+    background-color: red;
 }
