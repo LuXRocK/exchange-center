@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2%;
   width: 90%;
   border-bottom: 1px solid #e8c547;
@@ -16,8 +22,12 @@
 .nav {
   width: 30%;
   margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__button {
@@ -36,7 +46,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu';
@@ -49,35 +60,62 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .first_page {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main {
   width: 60%;
   margin-top: 5%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
   padding: 8% 5%;
@@ -88,27 +126,39 @@ body {
 }
 
 .article--visible {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-areas: "title img" "text img";
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: "title img" "text img";
 }
 
 .article__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: title;
   color: white;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .article__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: text;
   color: #dddddd;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .article__img {
   width: 50%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .button__next, .button__prev {
@@ -118,6 +168,7 @@ body {
   background-color: transparent;
   outline: none;
   border: none;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
 }
 
@@ -139,5 +190,70 @@ body {
 .button__prev {
   top: 45%;
   right: 95%;
+}
+
+.second_page {
+  text-align: center;
+  margin-top: 75px;
+  padding: 10px;
+  width: 100%;
+}
+
+.second_page__title {
+  padding: 10px;
+  color: wheat;
+}
+
+.currency_rates {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 10px;
+  border-collapse: collapse;
+  color: wheat;
+}
+
+.rates_head_th {
+  padding: 20px;
+}
+
+.rates_body_td {
+  border-style: solid none solid none;
+  padding: 20px;
+}
+
+.img_euro {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 1px;
+}
+
+.img_usd {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 1px;
+}
+
+.img_chf {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 1px;
+}
+
+.img_gbp {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 1px;
+}
+
+.img_czk {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 1px;
 }
 /*# sourceMappingURL=main.css.map */
