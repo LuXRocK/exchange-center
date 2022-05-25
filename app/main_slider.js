@@ -9,6 +9,17 @@ articles.forEach((article)=>{
 
 let counter = 0;
 
+const swap = [
+    { transform: 'translatex(-100%) scale(0)' },
+    { transform: 'translatex(0) scale(1)' }
+  ];
+  
+const timing = {
+    duration: 2000,
+    iterations: 1,
+  }
+  
+
 next.addEventListener("click", function(){
     if (counter == 2){
         counter = 0;

@@ -35,6 +35,16 @@
   padding: 13px 3% 0 3%;
 }
 
+@keyframes slider {
+  from {
+    opacity: 0;
+    background-color: transparent;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -93,6 +103,7 @@ body {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-areas: "title img" "text img";
+  animation: slider 1.5s;
 }
 
 .article__title {

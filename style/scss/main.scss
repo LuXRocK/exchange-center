@@ -1,4 +1,4 @@
-@import 'components/_header', 'variables/colors', 'variables/fonts';
+@import 'components/_header', 'variables/colors', 'variables/fonts', 'variables/keyframes';
 
 *{
     box-sizing: border-box;
@@ -63,6 +63,7 @@ body{
         "title img"
         "text img"
         ;
+        animation: slider 1.5s;
     }
 
     &__title{
