@@ -1,4 +1,4 @@
-@import 'components/_header', 'variables/colors', 'variables/fonts';
+@import 'components/_header', 'variables/colors', 'variables/fonts', 'variables/keyframes';
 
 *{
     box-sizing: border-box;
@@ -28,11 +28,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .main{
     width: 60%;
-    margin-top: 5%;
+    margin-top: 3%;
     position: relative;
     display: flex;
     align-items: center;
@@ -41,6 +42,7 @@ body{
 
 .slider{
     width: 80%;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,10 +51,12 @@ body{
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
     padding: 8% 5%;
+    border-radius: 5px;
 }
 
 .article{
     display: none;
+    height: 100%;
 
     &--visible{
         display: grid;
@@ -61,6 +65,7 @@ body{
         "title img"
         "text img"
         ;
+        animation: slider 1.5s;
     }
 
     &__title{
@@ -76,7 +81,7 @@ body{
     }
 
     &__img{
-        width: 50%;
+        height: 200px;
         grid-area: img;
         justify-self: center;
     }
@@ -112,12 +117,53 @@ body{
     right: 95%;
 }
 
+.calculator{
+    display: flex;
+    width: 60%;
+    min-height: 20vh;
+    margin: 3% 10%;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 5px;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__item{
+
+        &--text{
+            margin: 5% 0;
+            color: $textLight;
+            font-weight: 600;
+        }
+
+        &--input{
+            width: 10vw;
+            padding: 4%;
+            background-color: $background;
+            color: $textLight;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+
+    &__button{
+        padding: 1.5% 2%;
+        background-color: $second;
+        border: none;
+        border-radius: 3px;
+    }
+}
 // second page 
 .second_page{
     text-align: center;
     margin-top: 75px;
     padding: 10px;    
     width: 100%;
+    display: none;
 }
 .second_page__title{
     padding: 10px;   

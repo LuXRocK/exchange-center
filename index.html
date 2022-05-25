@@ -18,22 +18,43 @@
             </header>
             <div class="first_page">
                 <main class="main">
-                    <button class="button__prev"><img src="./style/img/prev.svg" alt="Preview"></button>
+                    <button class="button__prev" id="prev_btn"><img src="./style/img/prev.svg" alt="Preview"></button>
                     <section class="slider">
                         <article class="article article--visible "><h3 class="article__title">First title</h3><p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img class="article__img" src="./style/img/real_time.svg" alt="Real time data"></article>
                         <article class="article "><h3 class="article__title">Second title</h3><p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img class="article__img" src="./style/img/money_transfer.svg" alt="Money transfer"></article>
                         <article class="article"><h3 class="article__title">Third title</h3><p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img class="article__img" src="./style/img/your_finance.svg" alt="Your finance"></article>
                     </section>
-                    <button class="button__next"><img src="./style/img/next.svg" alt="Next"></button>
+                    <button class="button__next" id="next_btn"><img src="./style/img/next.svg" alt="Next"></button>
                 </main>
                 <section class="calculator">
+                    <section class="inputs">
+                        <section class="inputs__item">
+                            <p class="inputs__item--text">Amount</p>
+                            <input type="text" name="amount" id="amount" class="inputs__item--input">
+                        </section>
+                        <section class="inputs__item">
+                            <p class="inputs__item--text">From</p>
+                            <select name="from" id="from" class="inputs__item--input">
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                                <option value="chf">CHF</option>
+                                <option value="gbp">GBP</option>
+                                <option value="czk">CZK</option>
+                            </select>
+                        </section>
+                        <section class="inputs__item">
+                            <p class="inputs__item--text">To</p>
+                            <select name="to" id="to" class="inputs__item--input">
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                                <option value="chf">CHF</option>
+                                <option value="gbp">GBP</option>
+                                <option value="czk">CZK</option>
+                            </select>
+                        </section>
+                        <button class="inputs__button">Convert</button>
+                    </section>
                     
-                </section>
-                <section class="courses">
-                    <article class="courses__graph"></article>
-                    <article class="courses__graph"></article>
-                    <article class="courses__graph"></article>
-                    <article class="courses__graph"></article>
                 </section>
             </div>
             <div class="second_page">
@@ -111,5 +132,6 @@
 
             </div>
     </div>
+    <script src="./app/main_slider.js"></script>
 </body>
 </html>
