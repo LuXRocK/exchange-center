@@ -167,7 +167,7 @@ body{
 }
 .second_page__title{
     padding: 10px;   
-    color: wheat;
+    color: $second;
 }
 .currency_rates{
     width: 70%;
@@ -175,7 +175,7 @@ body{
     margin-right: auto; 
     border-spacing: 10px;
     border-collapse: collapse;
-    color: wheat;
+    color: $second;
 }   
 .rates_head_th{
     padding: 20px;
