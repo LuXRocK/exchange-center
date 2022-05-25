@@ -27,13 +27,34 @@
                     <button class="button__next" id="next_btn"><img src="./style/img/next.svg" alt="Next"></button>
                 </main>
                 <section class="calculator">
+                    <section class="inputs">
+                        <section class="inputs__item">
+                            <p class="inputs__item--text">Amount</p>
+                            <input type="text" name="amount" id="amount" class="inputs__item--input">
+                        </section>
+                        <section class="inputs__item">
+                            <p class="inputs__item--text">From</p>
+                            <select name="from" id="from" class="inputs__item--input">
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                                <option value="chf">CHF</option>
+                                <option value="gbp">GBP</option>
+                                <option value="czk">CZK</option>
+                            </select>
+                        </section>
+                        <section class="inputs__item">
+                            <p class="inputs__item--text">To</p>
+                            <select name="to" id="to" class="inputs__item--input">
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                                <option value="chf">CHF</option>
+                                <option value="gbp">GBP</option>
+                                <option value="czk">CZK</option>
+                            </select>
+                        </section>
+                        <button class="inputs__button">Convert</button>
+                    </section>
                     
-                </section>
-                <section class="courses">
-                    <article class="courses__graph"></article>
-                    <article class="courses__graph"></article>
-                    <article class="courses__graph"></article>
-                    <article class="courses__graph"></article>
                 </section>
             </div>
             <div class="second_page">

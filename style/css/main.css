@@ -70,11 +70,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main {
   width: 60%;
-  margin-top: 5%;
+  margin-top: 3%;
   position: relative;
   display: flex;
   align-items: center;
@@ -92,6 +93,7 @@ body {
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
   padding: 8% 5%;
+  border-radius: 5px;
 }
 
 .article {
@@ -152,6 +154,44 @@ body {
 .button__prev {
   top: 45%;
   right: 95%;
+}
+
+.calculator {
+  display: flex;
+  width: 60%;
+  min-height: 20vh;
+  margin: 3% 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputs__item--text {
+  margin: 5% 0;
+  color: #dddddd;
+  font-weight: 600;
+}
+
+.inputs__item--input {
+  width: 10vw;
+  padding: 4%;
+  background-color: #30323d;
+  color: #dddddd;
+  border: none;
+  border-radius: 3px;
+}
+
+.inputs__button {
+  padding: 1.5% 2%;
+  background-color: #e8c547;
+  border: none;
+  border-radius: 3px;
 }
 
 .second_page {
