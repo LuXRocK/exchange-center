@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2%;
   width: 90%;
   border-bottom: 1px solid #e8c547;
@@ -16,8 +22,12 @@
 .nav {
   width: 30%;
   margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__button {
@@ -35,6 +45,16 @@
   padding: 13px 3% 0 3%;
 }
 
+@-webkit-keyframes slider {
+  from {
+    opacity: 0;
+    background-color: transparent;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes slider {
   from {
     opacity: 0;
@@ -46,7 +66,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu';
@@ -59,37 +80,65 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .first_page {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main {
   width: 60%;
   margin-top: 3%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider {
   width: 80%;
   height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
   padding: 8% 5%;
@@ -102,28 +151,41 @@ body {
 }
 
 .article--visible {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-areas: "title img" "text img";
-  animation: slider 1.5s;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: "title img" "text img";
+  -webkit-animation: slider 1.5s;
+          animation: slider 1.5s;
 }
 
 .article__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: title;
   color: white;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .article__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: text;
   color: #dddddd;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .article__img {
   height: 200px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .button__next, .button__prev {
@@ -133,6 +195,7 @@ body {
   background-color: transparent;
   outline: none;
   border: none;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
 }
 
@@ -157,6 +220,8 @@ body {
 }
 
 .calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 60%;
   min-height: 20vh;
@@ -167,9 +232,14 @@ body {
 
 .inputs {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .inputs__item--text {
@@ -204,7 +274,7 @@ body {
 
 .second_page__title {
   padding: 10px;
-  color: wheat;
+  color: #e8c547;
 }
 
 .currency_rates {
@@ -213,7 +283,7 @@ body {
   margin-right: auto;
   border-spacing: 10px;
   border-collapse: collapse;
-  color: wheat;
+  color: #e8c547;
 }
 
 .rates_head_th {

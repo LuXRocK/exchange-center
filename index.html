@@ -30,29 +30,31 @@
                     <section class="inputs">
                         <section class="inputs__item">
                             <p class="inputs__item--text">Amount</p>
-                            <input type="text" name="amount" id="amount" class="inputs__item--input">
+                            <input type="text" name="amount" id="amount" class="inputs__item--input" value="100">
                         </section>
                         <section class="inputs__item">
                             <p class="inputs__item--text">From</p>
                             <select name="from" id="from" class="inputs__item--input">
-                                <option value="usd">USD</option>
-                                <option value="eur">EUR</option>
-                                <option value="chf">CHF</option>
-                                <option value="gbp">GBP</option>
-                                <option value="czk">CZK</option>
+                                <option value="PLN">PLN</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="CHF">CHF</option>
+                                <option value="GBP">GBP</option>
+                                <option value="CZK">CZK</option>
                             </select>
                         </section>
                         <section class="inputs__item">
                             <p class="inputs__item--text">To</p>
                             <select name="to" id="to" class="inputs__item--input">
-                                <option value="usd">USD</option>
-                                <option value="eur">EUR</option>
-                                <option value="chf">CHF</option>
-                                <option value="gbp">GBP</option>
-                                <option value="czk">CZK</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="CHF">CHF</option>
+                                <option value="GBP">GBP</option>
+                                <option value="CZK">CZK</option>
+                                <option value="PLN">PLN</option>
                             </select>
                         </section>
-                        <button class="inputs__button">Convert</button>
+                        <button class="inputs__button" id="button_convert">Convert</button>
                     </section>
                     
                 </section>
@@ -74,7 +76,7 @@
                             <tr class="eur_rate">
                                 <td class="rates_body_td">
                                     <div class="pierwsza_komorka">
-                                        <img src="euro.png" alt="euro" class="img_euro">
+                                        <img src="/style/img/flags/euro.png" alt="euro" class="img_euro">
                                         <p class="pierwsza_komorka_euro">Euro</p>    
                                     </div>
                                 </td>
@@ -85,7 +87,7 @@
                             <tr class="usd_rates">
                                 <td class="rates_body_td">
                                     <div class="pierwsza_komorka">
-                                        <img src="usd.png" alt="dolar" class="img_usd">
+                                        <img src="/style/img/flags/usd.png" alt="dolar" class="img_usd">
                                         <p>Dolar amerykański</p> 
                                     </div>   
                                 </td>
@@ -96,7 +98,7 @@
                             <tr class="chf_rates">
                                 <td class="rates_body_td">
                                     <div class="pierwsza_komorka">
-                                        <img src="chf.png" alt="frank_szwajcarski" class="img_chf">
+                                        <img src="/style/img/flags/chf.png" alt="frank_szwajcarski" class="img_chf">
                                         <p>Frank szwajcarski</p>  
                                     </div>  
                                 </td>
@@ -107,7 +109,7 @@
                             <tr class="gbp_rates">
                                 <td class="rates_body_td">
                                     <div class="pierwsza_komorka">
-                                        <img src="gbp.png" alt="funt_brytyjski" class="img_gbp">
+                                        <img src="/style/img/flags/gbp.png" alt="funt_brytyjski" class="img_gbp">
                                         <p>Funt brytyjski</p>    
                                     </div>
                                 </td>
@@ -118,7 +120,7 @@
                             <tr class="czk_rates">
                                 <td class="rates_body_td">
                                     <div class="pierwsza_komorka">
-                                        <img src="czk.png" alt="korona_czeska" class="img_czk">
+                                        <img src="/style/img/flags/czk.png" alt="korona_czeska" class="img_czk">
                                         <p>Korona czeska</p> 
                                     </div>   
                                 </td>
@@ -133,5 +135,6 @@
             </div>
     </div>
     <script src="./app/main_slider.js"></script>
+    <script src="./app/kalkulator.js"></script>
 </body>
 </html>
