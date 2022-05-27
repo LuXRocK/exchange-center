@@ -28,6 +28,11 @@
   outline: none;
   border: none;
   font-weight: 400;
+  transition: ease-in-out .5s;
+}
+
+.nav__button:hover {
+  font-size: 18px;
 }
 
 .btn_active {
