@@ -232,30 +232,54 @@ body{
 
 .us{
     width: 60%;
-    margin-top: 3%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     &__person{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 30%;
-        height: 30vh;
+        height: 35vh;
         padding: 5%;
         background-color: $main;
         border-radius: 5px;
 
-        &--title{
+        &--logo{
+            width: 15vh;
+            border-radius: 50%;
+            margin-bottom: 10%;
+        }
 
+        &--title{
+            color: $textLight;
         }
 
         &--img{
-            width: 20px;
-            border-radius: 50%;
-            
+            width: 30px;
+            border-radius: 50%;  
         }
 
         &--link{
+            margin-top: 10%;
+        }
 
+    }
+}
+
+.list{
+    list-style: none;
+
+    &__item{
+        margin: 10% 0;
+        color: $textLight;
+        font-size: 18px;
+
+        &--link{
+            color: $second;
+            font-size: 16px;
         }
     }
 }

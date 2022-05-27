@@ -275,23 +275,55 @@ body {
 
 .us {
   width: 60%;
-  margin-top: 3%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .us__person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 30%;
-  height: 30vh;
+  height: 35vh;
   padding: 5%;
   background-color: #4d5061;
   border-radius: 5px;
 }
 
-.us__person--img {
-  width: 20px;
+.us__person--logo {
+  width: 15vh;
   border-radius: 50%;
+  margin-bottom: 10%;
+}
+
+.us__person--title {
+  color: #dddddd;
+}
+
+.us__person--img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.us__person--link {
+  margin-top: 10%;
+}
+
+.list {
+  list-style: none;
+}
+
+.list__item {
+  margin: 10% 0;
+  color: #dddddd;
+  font-size: 18px;
+}
+
+.list__item--link {
+  color: #e8c547;
+  font-size: 16px;
 }
 
 .disabled {
