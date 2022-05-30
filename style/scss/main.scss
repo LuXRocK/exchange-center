@@ -1,17 +1,17 @@
 @import 'components/_header', 'variables/colors', 'variables/fonts', 'variables/keyframes';
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu';
 }
 
-body{
+body {
     background-color: $background;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     backdrop-filter: blur(10px);
@@ -22,7 +22,7 @@ body{
 
 //main page 
 
-.first_page{
+.first_page {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ body{
 
 }
 
-.main{
+.main {
     width: 60%;
     margin-top: 3%;
     position: relative;
@@ -40,7 +40,7 @@ body{
     justify-content: center;
 }
 
-.slider{
+.slider {
     width: 80%;
     height: 40vh;
     display: flex;
@@ -54,40 +54,41 @@ body{
     border-radius: 5px;
 }
 
-.article{
+.article {
     display: none;
     height: 100%;
 
-    &--visible{
+    &--visible {
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-template-areas: 
-        "title img"
-        "text img"
+        grid-template-areas:
+            "title img"
+            "text img"
         ;
         animation: slider 1.5s;
     }
 
-    &__title{
+    &__title {
         grid-area: title;
         color: white;
         justify-self: center;
     }
 
-    &__text{
+    &__text {
         grid-area: text;
         color: $textLight;
         justify-self: center;
     }
 
-    &__img{
+    &__img {
         height: 200px;
         grid-area: img;
         justify-self: center;
     }
 }
 
-.button__next, .button__prev{
+.button__next,
+.button__prev {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -96,29 +97,32 @@ body{
     border: none;
     transition: ease-in .3s;
 
-    &:hover{
+    &:hover {
         width: 60px;
         height: 60px;
         top: 44%
     }
 
-    img{
+    img {
         width: 100%;
     }
 }
 
-.button__next{
+.button__next {
     top: 45%;
     left: 95%;
 }
 
-.button__prev{
+.button__prev {
     top: 45%;
     right: 95%;
 }
 
-.calculator{
+.calculator {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 60%;
     min-height: 20vh;
     margin: 3% 10%;
@@ -126,21 +130,34 @@ body{
     border-radius: 5px;
 }
 
-.inputs{
+.result {
+    display: block;
+    margin-top: 2%;
+
+    &__text {
+        color: $textLight;
+
+        &--disabled {
+            color: #464751;
+        }
+    }
+}
+
+.inputs {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    &__item{
+    &__item {
 
-        &--text{
+        &--text {
             margin: 5% 0;
             color: $textLight;
             font-weight: 600;
         }
 
-        &--input{
+        &--input {
             width: 10vw;
             padding: 4%;
             background-color: $background;
@@ -150,66 +167,75 @@ body{
         }
     }
 
-    &__button{
+    &__button {
         padding: 1.5% 2%;
         background-color: $second;
         border: none;
         border-radius: 3px;
     }
 }
+
 // second page 
-.second_page{
+.second_page {
     text-align: center;
     margin-top: 75px;
-    padding: 10px;    
+    padding: 10px;
     width: 100%;
 }
 
-.second_page__title{
-    padding: 10px;   
+.second_page__title {
+    padding: 10px;
     color: $second;
 }
-.currency_rates{
+
+.currency_rates {
     width: 70%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     border-spacing: 10px;
     border-collapse: collapse;
     color: $second;
-}   
-.rates_head_th{
+}
+
+.rates_head_th {
     padding: 20px;
 }
-.rates_body_td{
+
+.rates_body_td {
     border-style: solid none solid none;
     padding: 20px;
 }
-.img_euro{
+
+.img_euro {
     height: 25px;
     width: 25px;
     border-radius: 100%;
     padding: 1px;
 
 }
-.img_usd{
+
+.img_usd {
     height: 25px;
     width: 25px;
     border-radius: 100%;
     padding: 1px;
 }
-.img_chf{
+
+.img_chf {
     height: 25px;
     width: 25px;
     border-radius: 100%;
     padding: 1px;
 }
-.img_gbp{
+
+.img_gbp {
     height: 25px;
     width: 25px;
     border-radius: 100%;
     padding: 1px;
 }
-.img_czk{
+
+.img_czk {
     height: 25px;
     width: 25px;
     border-radius: 100%;
@@ -218,26 +244,26 @@ body{
 
 //third page
 
-.third__page{
+.third__page {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    &--title{
-        margin: 3% 0 3% 9%; 
+    &--title {
+        margin: 3% 0 3% 9%;
         align-self: flex-start;
         color: $textLight;
     }
 }
 
-.us{
+.us {
     width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    &__person{
+    &__person {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -248,37 +274,37 @@ body{
         background-color: $main;
         border-radius: 5px;
 
-        &--logo{
+        &--logo {
             width: 15vh;
             border-radius: 50%;
             margin-bottom: 10%;
         }
 
-        &--title{
+        &--title {
             color: $textLight;
         }
 
-        &--img{
+        &--img {
             width: 30px;
-            border-radius: 50%;  
+            border-radius: 50%;
         }
 
-        &--link{
+        &--link {
             margin-top: 10%;
         }
 
     }
 }
 
-.list{
+.list {
     list-style: none;
 
-    &__item{
+    &__item {
         margin: 10% 0;
         color: $textLight;
         font-size: 18px;
 
-        &--link{
+        &--link {
             color: $second;
             font-size: 16px;
         }
@@ -287,6 +313,6 @@ body{
 
 //musi byc na koncu 
 
-.disabled{
+.disabled {
     display: none;
 }

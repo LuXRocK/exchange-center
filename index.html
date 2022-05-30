@@ -1,167 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./style/css/main.css">
 </head>
+
 <body>
     <div class="container">
-            <header class="header">
-                <img src="" alt="" class="header__logo">
-                <h1 class="header__title">MIDAS</h1>
-                <nav class="nav">
-                    <button class="nav__button first btn_active">Main page</button>
-                    <button class="nav__button second">Currency status</button>
-                    <button class="nav__button third">About us</button>
-                </nav>
-            </header>
-            <div class="first_page ">
-                <main class="main">
-                    <button class="button__prev" id="prev_btn"><img src="./style/img/prev.svg" alt="Preview"></button>
-                    <section class="slider">
-                        <article class="article article--visible "><h3 class="article__title">First title</h3><p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img class="article__img" src="./style/img/real_time.svg" alt="Real time data"></article>
-                        <article class="article "><h3 class="article__title">Second title</h3><p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img class="article__img" src="./style/img/money_transfer.svg" alt="Money transfer"></article>
-                        <article class="article"><h3 class="article__title">Third title</h3><p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img class="article__img" src="./style/img/your_finance.svg" alt="Your finance"></article>
-                    </section>
-                    <button class="button__next" id="next_btn"><img src="./style/img/next.svg" alt="Next"></button>
-                </main>
-                <section class="calculator">
-                    <section class="inputs">
-                        <section class="inputs__item">
-                            <p class="inputs__item--text">Amount</p>
-                            <input type="text" name="amount" id="amount" class="inputs__item--input" value="100">
-                        </section>
-                        <section class="inputs__item">
-                            <p class="inputs__item--text">From</p>
-                            <select name="from" id="from" class="inputs__item--input">
-                                <option value="PLN">PLN</option>
-                                <option value="USD">USD</option>
-                                <option value="EUR">EUR</option>
-                                <option value="CHF">CHF</option>
-                                <option value="GBP">GBP</option>
-                                <option value="CZK">CZK</option>
-                            </select>
-                        </section>
-                        <section class="inputs__item">
-                            <p class="inputs__item--text">To</p>
-                            <select name="to" id="to" class="inputs__item--input">
-                                <option value="USD">USD</option>
-                                <option value="EUR">EUR</option>
-                                <option value="CHF">CHF</option>
-                                <option value="GBP">GBP</option>
-                                <option value="CZK">CZK</option>
-                                <option value="PLN">PLN</option>
-                            </select>
-                        </section>
-                        <button class="inputs__button" id="button_convert">Convert</button>
-                    </section>
-                    
-                    
-                </section>
-            </div>
-            <div class="second_page disabled">
-                <!-- currencies status -->
-                <h1 class="second_page__title">KURSY WALUT</h1>
-                <div class="currency_rates_table">
-                    <table class="currency_rates">
-                        <thead class="rates_head">
-                            <tr class="rates_head">
-                                <th class="rates_head_th">Waluta</th>
-                                <th class="rates_head_th">Kupno</th>
-                                <th class="rates_head_th">Sprzedaż</th>
-                                <th class="rates_head_th">Średni</th>
-                            </tr>
-                        </thead>
-                        <tbody class="rates_body">
-                            <tr class="eur_rate">
-                                <td class="rates_body_td">
-                                    <div class="pierwsza_komorka">
-                                        <img src="/style/img/flags/euro.png" alt="euro" class="img_euro">
-                                        <p class="pierwsza_komorka_euro">Euro</p>    
-                                    </div>
-                                </td>
-                                <td class="rates_body_td">4,6022</td>
-                                <td class="rates_body_td">4,6324</td>
-                                <td class="rates_body_td">4,6174</td>
-                            </tr>
-                            <tr class="usd_rates">
-                                <td class="rates_body_td">
-                                    <div class="pierwsza_komorka">
-                                        <img src="/style/img/flags/usd.png" alt="dolar" class="img_usd">
-                                        <p>Dolar amerykański</p> 
-                                    </div>   
-                                </td>
-                                <td class="rates_body_td">4,3221</td>
-                                <td class="rates_body_td">4,3366</td>
-                                <td class="rates_body_td">4,3366</td>
-                            </tr>
-                            <tr class="chf_rates">
-                                <td class="rates_body_td">
-                                    <div class="pierwsza_komorka">
-                                        <img src="/style/img/flags/chf.png" alt="frank_szwajcarski" class="img_chf">
-                                        <p>Frank szwajcarski</p>  
-                                    </div>  
-                                </td>
-                                <td class="rates_body_td">4,4587</td>
-                                <td class="rates_body_td">4,4993</td>
-                                <td class="rates_body_td">4,4690</td>
-                            </tr>
-                            <tr class="gbp_rates">
-                                <td class="rates_body_td">
-                                    <div class="pierwsza_komorka">
-                                        <img src="/style/img/flags/gbp.png" alt="funt_brytyjski" class="img_gbp">
-                                        <p>Funt brytyjski</p>    
-                                    </div>
-                                </td>
-                                <td class="rates_body_td">5,4235</td>
-                                <td class="rates_body_td">5,4626</td>
-                                <td class="rates_body_td">5,4429</td>
-                            </tr>
-                            <tr class="czk_rates">
-                                <td class="rates_body_td">
-                                    <div class="pierwsza_komorka">
-                                        <img src="/style/img/flags/czk.png" alt="korona_czeska" class="img_czk">
-                                        <p>Korona czeska</p> 
-                                    </div>   
-                                </td>
-
-                                <td class="rates_body_td">0,1867</td>
-                                <td class="rates_body_td">0,1887</td>
-                                <td class="rates_body_td">0,1877</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-            <div class="third__page disabled">
-                <h2 class="third__page--title">Authors</h2>
-                <section class="us">
-                    <article class="us__person">
-                        <img src="./style/img/samuel.jpg" alt="Samuel photo" class="us__person--logo">
-                        <h3 class="us__person--title">Samuel Ujazda</h3>
-                        <a href="https://github.com/LuXRocK" target="_blank"class="us__person--link" title="Github | Click!"><img src="./style/img/github.png" alt="github logo"class="us__person--img"></a>
+        <header class="header">
+            <img src="" alt="" class="header__logo">
+            <h1 class="header__title">MIDAS</h1>
+            <nav class="nav">
+                <button class="nav__button first btn_active">Main page</button>
+                <button class="nav__button second">Currency status</button>
+                <button class="nav__button third">About us</button>
+            </nav>
+        </header>
+        <div class="first_page ">
+            <main class="main">
+                <button class="button__prev" id="prev_btn"><img src="./style/img/prev.svg" alt="Preview"></button>
+                <section class="slider">
+                    <article class="article article--visible ">
+                        <h3 class="article__title">First title</h3>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus
+                            voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni
+                            asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img
+                            class="article__img" src="./style/img/real_time.svg" alt="Real time data">
                     </article>
-                    <article class="us__person">
-                        <img src="./style/img/oliwier.jpg" alt="Oliwier photo" class="us__person--logo">
-                        <h3 class="us__person--title">Oliwier Gebczynski</h3>
-                        <a href="https://github.com/Oliwier-Gebczynski" target="_blank" class="us__person--link" title="Github | Click!"><img src="./style/img/github.png" alt="github logo"class="us__person--img" ></a>
+                    <article class="article ">
+                        <h3 class="article__title">Second title</h3>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus
+                            voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni
+                            asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img
+                            class="article__img" src="./style/img/money_transfer.svg" alt="Money transfer">
+                    </article>
+                    <article class="article">
+                        <h3 class="article__title">Third title</h3>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus
+                            voluptas obcaecati. Consequuntur eligendi nulla aspernatur tenetur, ut culpa ex magni
+                            asperiores! Laboriosam quisquam, odio nemo iure impedit ex. Maiores.</p><img
+                            class="article__img" src="./style/img/your_finance.svg" alt="Your finance">
                     </article>
                 </section>
-                <h2 class="third__page--title">Sources used</h2>
-                <ul class="list">
-                    <li class="list__item">
-                        Currency API <a href="https://exchangeratesapi.io/" class="list__item--link" target="_blank">exchangeratesapi.io</a>
-                    </li>
-                    <li class="list__item">
-                        Images from main page <a href="https://undraw.co/" class="list__item--link" target="_blank">undraw.co</a>
-                    </li>
-                </ul>
+                <button class="button__next" id="next_btn"><img src="./style/img/next.svg" alt="Next"></button>
+            </main>
+            <section class="calculator">
+                <section class="inputs">
+                    <section class="inputs__item">
+                        <p class="inputs__item--text">Amount</p>
+                        <input type="text" name="amount" id="amount" class="inputs__item--input" value="100">
+                    </section>
+                    <section class="inputs__item">
+                        <p class="inputs__item--text">From</p>
+                        <select name="from" id="from" class="inputs__item--input">
+                            <option value="PLN">PLN</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="CHF">CHF</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CZK">CZK</option>
+                        </select>
+                    </section>
+                    <section class="inputs__item">
+                        <p class="inputs__item--text">To</p>
+                        <select name="to" id="to" class="inputs__item--input">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="CHF">CHF</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CZK">CZK</option>
+                            <option value="PLN">PLN</option>
+                        </select>
+                    </section>
+                    <button class="inputs__button" id="button_convert">Convert</button>
+                </section>
+                <section class="result">
+                    <p class="result__text result__text--disabled">text too fill the html</p>
+                </section>
+
+            </section>
+        </div>
+        <div class="second_page disabled">
+            <!-- currencies status -->
+            <h1 class="second_page__title">KURSY WALUT</h1>
+            <div class="currency_rates_table">
+                <table class="currency_rates">
+                    <thead class="rates_head">
+                        <tr class="rates_head">
+                            <th class="rates_head_th">Waluta</th>
+                            <th class="rates_head_th">Kupno</th>
+                            <th class="rates_head_th">Sprzedaż</th>
+                            <th class="rates_head_th">Średni</th>
+                        </tr>
+                    </thead>
+                    <tbody class="rates_body">
+                        <tr class="eur_rate">
+                            <td class="rates_body_td">
+                                <div class="pierwsza_komorka">
+                                    <img src="/style/img/flags/euro.png" alt="euro" class="img_euro">
+                                    <p class="pierwsza_komorka_euro">Euro</p>
+                                </div>
+                            </td>
+                            <td class="rates_body_td">4,6022</td>
+                            <td class="rates_body_td">4,6324</td>
+                            <td class="rates_body_td">4,6174</td>
+                        </tr>
+                        <tr class="usd_rates">
+                            <td class="rates_body_td">
+                                <div class="pierwsza_komorka">
+                                    <img src="/style/img/flags/usd.png" alt="dolar" class="img_usd">
+                                    <p>Dolar amerykański</p>
+                                </div>
+                            </td>
+                            <td class="rates_body_td">4,3221</td>
+                            <td class="rates_body_td">4,3366</td>
+                            <td class="rates_body_td">4,3366</td>
+                        </tr>
+                        <tr class="chf_rates">
+                            <td class="rates_body_td">
+                                <div class="pierwsza_komorka">
+                                    <img src="/style/img/flags/chf.png" alt="frank_szwajcarski" class="img_chf">
+                                    <p>Frank szwajcarski</p>
+                                </div>
+                            </td>
+                            <td class="rates_body_td">4,4587</td>
+                            <td class="rates_body_td">4,4993</td>
+                            <td class="rates_body_td">4,4690</td>
+                        </tr>
+                        <tr class="gbp_rates">
+                            <td class="rates_body_td">
+                                <div class="pierwsza_komorka">
+                                    <img src="/style/img/flags/gbp.png" alt="funt_brytyjski" class="img_gbp">
+                                    <p>Funt brytyjski</p>
+                                </div>
+                            </td>
+                            <td class="rates_body_td">5,4235</td>
+                            <td class="rates_body_td">5,4626</td>
+                            <td class="rates_body_td">5,4429</td>
+                        </tr>
+                        <tr class="czk_rates">
+                            <td class="rates_body_td">
+                                <div class="pierwsza_komorka">
+                                    <img src="/style/img/flags/czk.png" alt="korona_czeska" class="img_czk">
+                                    <p>Korona czeska</p>
+                                </div>
+                            </td>
+
+                            <td class="rates_body_td">0,1867</td>
+                            <td class="rates_body_td">0,1887</td>
+                            <td class="rates_body_td">0,1877</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
+        </div>
+        <div class="third__page disabled">
+            <h2 class="third__page--title">Authors</h2>
+            <section class="us">
+                <article class="us__person">
+                    <img src="./style/img/samuel.jpg" alt="Samuel photo" class="us__person--logo">
+                    <h3 class="us__person--title">Samuel Ujazda</h3>
+                    <a href="https://github.com/LuXRocK" target="_blank" class="us__person--link"
+                        title="Github | Click!"><img src="./style/img/github.png" alt="github logo"
+                            class="us__person--img"></a>
+                </article>
+                <article class="us__person">
+                    <img src="./style/img/oliwier.jpg" alt="Oliwier photo" class="us__person--logo">
+                    <h3 class="us__person--title">Oliwier Gebczynski</h3>
+                    <a href="https://github.com/Oliwier-Gebczynski" target="_blank" class="us__person--link"
+                        title="Github | Click!"><img src="./style/img/github.png" alt="github logo"
+                            class="us__person--img"></a>
+                </article>
+            </section>
+            <h2 class="third__page--title">Sources used</h2>
+            <ul class="list">
+                <li class="list__item">
+                    Currency API <a href="https://exchangeratesapi.io/" class="list__item--link"
+                        target="_blank">exchangeratesapi.io</a>
+                </li>
+                <li class="list__item">
+                    Images from main page <a href="https://undraw.co/" class="list__item--link"
+                        target="_blank">undraw.co</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="./app/main_slider.js"></script>
     <script src="./app/nav.js"></script>
     <script src="./app/kalkulator.js"></script>
 </body>
+
 </html>
